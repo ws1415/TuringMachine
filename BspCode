@@ -1,0 +1,26 @@
+//Beispiel Lösung Turing Machine Hausübung
+
+0 0 0 r 0
+0 1 1 r 0
+0 x x r 1
+1 0 0 r 1
+1 1 0 l 2
+1 = = l 5
+2 1 1 l 2
+2 0 0 l 2
+2 x x l 2
+2 = = l 2
+2 _ _ r 3
+3 0 0 r 3
+3 1 0 r 4
+3 x x l 5
+4 1 1 r 4
+4 0 0 r 4
+4 x x r 4
+4 = = r 4
+4 _ 1 * 2
+5 0 1 l 5
+5 _ _ r 0
+5 x x * 6
+6 1 1 l 6
+6 _ _ * halt
